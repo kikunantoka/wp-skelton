@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta charset="utf-8">
-  <title>Your page title here :)</title>
+  <title>wp-skelton</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -31,14 +31,55 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <header>
+    <div class="container">
+      <h1>Title of blog</h1>
+      <p>This area is header</p>
+    </div>
+  </header>
+
+
   <div class="container">
     <div class="row">
-      <div class="one-half column" style="margin-top: 25%">
-        <h4>Basic Page</h4>
-        <p>This index.html page is a placeholder with the CSS, font and favicon. It's just waiting for you to add some content! If you need some help hit up the <a href="http://www.getskeleton.com">Skeleton documentation</a>.</p>
+      <main>
+        <div class="eight columns">
+          <div class="post">
+            <h2><a href="#">Post title</a></h2>
+            <p class="date">2015.08.04</p>
+            <p class="tags">Tags: <a href="#">hoge</a>, <a href="#">foo</a>, <a href="#">bar</a></p>
+            <p>
+              <img src="images/sample.jpg" alt="sample" class="u-max-full-width">
+            </p>
+            <p class="content">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos harum corporis enim quasi dolorum ipsam excepturi itaque temporibus aliquid consequuntur doloremque recusandae rerum quisquam quo, cumque facere voluptatum iusto iure.
+            </p>
+          </div>
+        </div>
+      </main>
+      <div class="four columns">
+        <h2>Recent Posts</h2>
+        <ul>
+          <li><a href="#">hoge</a></li>
+          <li><a href="#">piyo</a></li>
+          <li><a href="#">bar</a></li>
+        </ul>
+        <h2>Tags</h2>
+        <ul>
+          <li><a href="#">hoge</a></li>
+          <li><a href="#">piyo</a></li>
+          <li><a href="#">bar</a></li>
+        </ul>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam deleniti quae tempora, labore, quisquam ducimus optio sequi ullam consectetur eum tempore tenetur consequuntur vitae earum, cumque asperiores mollitia autem illum.
       </div>
     </div>
   </div>
+
+  <footer>
+    <div class="container">
+      <p>This area is footer</p>
+      <p>copyright.</p>
+    </div>
+  </footer>
 
 <!-- End Document
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
