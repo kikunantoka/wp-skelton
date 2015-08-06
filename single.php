@@ -21,6 +21,16 @@
               <?php endif; ?>
 
 						</div>
+            <!-- post navigation -->
+            <div class="navigation">
+              <?php if( get_previous_post() ): ?>
+              <div class="alignleft"><?php previous_post_link('%link', '« %title'); ?></div>
+              <?php endif;
+              if( get_next_post() ): ?>
+              <div class="alignright"><?php next_post_link('%link', '%title »'); ?></div>
+              <?php endif; ?>
+            </div>
+            <!-- /post navigation -->
 					<?php
 					endwhile; // 繰り返し処理終了
 				else : // ここから記事が見つからなかった場合の処理 ?>
