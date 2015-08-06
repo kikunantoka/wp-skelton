@@ -31,6 +31,7 @@
               <?php endif; ?>
             </div>
             <!-- /post navigation -->
+            <?php comments_template(); ?>
 					<?php
 					endwhile; // 繰り返し処理終了
 				else : // ここから記事が見つからなかった場合の処理 ?>
