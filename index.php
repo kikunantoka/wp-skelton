@@ -28,8 +28,8 @@
 				<?php
 				endif;
 				?>
-        
-        <div class="post">
+
+        <!-- <div class="post">
           <h2><a href="#">Post title</a></h2>
           <p class="date">2015.08.04</p>
           <p class="tags">Tags: <a href="#">hoge</a>, <a href="#">foo</a>, <a href="#">bar</a></p>
@@ -39,7 +39,17 @@
           <p class="content">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos harum corporis enim quasi dolorum ipsam excepturi itaque temporibus aliquid consequuntur doloremque recusandae rerum quisquam quo, cumque facere voluptatum iusto iure.
           </p>
+        </div> -->
+
+        <!-- pager -->
+        <?php if ( $wp_query -> max_num_pages > 1 ) : ?>
+        <div class="navigation">
+        <div class="alignleft"><?php next_posts_link('« PREV'); ?></div>
+        <div class="alignright"><?php previous_posts_link('NEXT »'); ?></div>
         </div>
+        <?php endif; ?>
+        <!-- /pager -->
+        
       </div>
     </main>
     <?php get_sidebar(); ?>
